@@ -1,0 +1,33 @@
+
+
+
+  <ng-container *ngFor="let employee of employees.data.projects">
+   <div id="list" >
+      
+      <img src={{employee.thumbnailUrl}} width="150" height="100">
+
+        <li >Name : {{employee.ProjectName}} &nbsp; | &nbsp; Area: {{employee.superBuiltUpArea}} &nbsp; | &nbsp; Completeion Date : {{employee.possession_construction_status}}
+         
+        </li>
+          <br/>
+      
+          <div id="ngbd">
+              <ngbd-modal-basic [name]="employee"></ngbd-modal-basic> &nbsp; <detail-modal  [name]="employee"></detail-modal>      
+              
+              <app-dynamic [name]="employee"> </app-dynamic>
+              
+            </div>
+
+            </div>
+          
+              
+
+          
+      
+         
+    
+      </ng-container>
+  
+
+
+  

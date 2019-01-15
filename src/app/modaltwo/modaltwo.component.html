@@ -1,0 +1,33 @@
+<ng-template #content let-modal>
+    <div class="modal-header">
+      <h2 class="modal-title" id="modal-basic-title">Details :</h2>
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      
+        
+          
+          <div id="one">
+            <h3>Overview :</h3>
+            Project Size :  {{name.projectSize}} <br/>
+            Floors : 19 <br/>
+            Locality : {{ name.Locality}}<br/>
+            Posession Date : {{ name.possession_construction_status}}
+          </div>
+
+          <div id="sec">
+              <h3>About Project :</h3>
+              
+          </div>
+        
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">OK</button>
+    </div>
+  </ng-template>
+  
+  <button id="b2" class="btn btn-lg btn-outline-primary" (click)="open(content)">Details</button>
+  
+  

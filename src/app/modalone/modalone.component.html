@@ -1,0 +1,44 @@
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h2 class="modal-title" id="modal-basic-title">Floor Plans :</h2>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="form-group">
+        
+        <div class="input-group">
+          <div class="input-group-append">
+            
+              <ul>
+                  <li *ngFor="let list of name.allImages">
+
+                      <div *ngFor="let listOne of list.value">
+
+                      <div *ngFor="let finalList of listOne.images">
+                          
+                           {{ finalList.displayname }} 
+                      
+                      </div> 
+                    </div>  
+                  </li>
+
+              </ul>
+                
+                   
+            
+          
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">OK</button>
+  </div>
+</ng-template>
+
+<button id="b1" class="btn btn-lg btn-outline-primary" (click)="open(content)">Floor plan</button>
+

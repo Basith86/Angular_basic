@@ -1,0 +1,31 @@
+li {
+    position: relative;
+    left : 180px;
+    bottom: 80px;
+}
+
+img {
+    position: relative;
+    top : 20px;
+    left: -10px;
+}
+
+#ngbd {
+    position: relative;
+    left : 180px;
+    bottom: 80px;
+}
+
+ #click{
+    height: 10%;
+} 
+
+ul{
+    margin-left: 20px;
+    width: 80%;
+    height : 140px;
+    border-style : solid;
+    border-width : thin;
+    border-radius : 10px;
+    cursor:pointer;
+}
